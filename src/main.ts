@@ -1,11 +1,9 @@
-const appElem = document.querySelector('#app');
+import * as qstr from './qtools/qstr.js';
 
-const showMessage = () => {
-	return "info from JavaScript";
-}
+const appElem = document.querySelector('#app');
 
 if (appElem) {
 	appElem.innerHTML = `
 	<h1>Info Site</h1>	
-	<p>${showMessage()}</p>`;
+	<p>${qstr.capitalizeFirstCharacter("welcome to this site")}</p>`;
 }

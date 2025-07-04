@@ -1,7 +1,7 @@
-var appElem = document.querySelector('#app');
-var showMessage = function () {
-    return "info from JavaScript";
-};
+import * as qstr from './qtools/qstr.js';
+const appElem = document.querySelector('#app');
 if (appElem) {
-    appElem.innerHTML = "\n\t<h1>Info Site</h1>\t\n\t<p>".concat(showMessage(), "</p>");
+    appElem.innerHTML = `
+	<h1>Info Site</h1>	
+	<p>${qstr.capitalizeFirstCharacter("welcome to this site")}</p>`;
 }
