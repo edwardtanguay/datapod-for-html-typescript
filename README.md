@@ -1,5 +1,11 @@
-# datapod-for-transpiled-typescript
+# datapod-for-html-typescript
 
-This is a TypeScript site from scratch that uses tsc to transpile TypeScript into JavaScript for use in a web browser.
+This site allows you to develop in HTML/Sass/TypeScript with hotloading and one-step publish to Vercel.
 
-It is still being set up.
+# development setup
+
+- `npm i`
+- `npm run dev` 
+- right-click `public/index.html` and "Open with Live Server" (VSCode extension)
+- develop in /src file
+- browser hot-reloads on any change: html, ts, scss, images

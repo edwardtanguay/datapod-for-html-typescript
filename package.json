@@ -1,0 +1,29 @@
+{
+  "name": "datapod-for-transpiled-typescript",
+  "version": "1.0.0",
+  "description": "This is a TypeScript site from scratch that uses tsc to transpile TypeScript into JavaScript for use in a web browser.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "conc \"nodemon\" \"npm run sass:watch\"",
+    "build": "tsc && cp src/index.html public/ && cp -r src/images public/ && sass src/scss:public/css",
+    "sass:watch": "sass --watch src/scss:public/css",
+    "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/datapod-for-html-typescript-json-$(date +%F-%H-%M-%S).zip\"'"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts,html,jpg,png,gif",
+    "exec": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3"
+  }
+}
