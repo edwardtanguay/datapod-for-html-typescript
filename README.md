@@ -9,3 +9,7 @@ This site allows you to develop in HTML/Sass/TypeScript with hotloading and one-
 - right-click `public/index.html` and "Open with Live Server" (VSCode extension)
 - develop in /src file
 - browser hot-reloads on any change: html, ts, scss, images
+
+## More Datapod templates and sites
+
+https://datapod-tanguay-eu.vercel.app
