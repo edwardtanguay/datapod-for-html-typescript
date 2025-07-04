@@ -2,10 +2,8 @@
 
 This is a TypeScript site from scratch that uses tsc to transpile TypeScript into JavaScript for use in a web browser.
 
-# setup
+# development setup
 
 - `npm i`
-
-# execute commands
-
-- `npm run build`
+- `npm run dev` (hot-transpiles TypeScript)
+- right-click `index.html` and "Open with Live Server" (VSCode extension)
