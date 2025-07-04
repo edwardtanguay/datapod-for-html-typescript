@@ -4,12 +4,21 @@
   "description": "This is a TypeScript site from scratch that uses tsc to transpile TypeScript into JavaScript for use in a web browser.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon",
     "build": "tsc"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^3.1.10",
     "typescript": "^5.8.3"
   }
 }
