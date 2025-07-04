@@ -1,16 +1,15 @@
 {
-  "name": "datapod-for-typescript",
+  "name": "datapod-for-transpiled-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a TypeScript site from scratch that uses tsc to transpile TypeScript into JavaScript for use in a web browser.",
   "main": "index.js",
   "scripts": {
-    "info": "npx tsx cmd-info.ts"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^24.0.10",
     "typescript": "^5.8.3"
   }
 }
